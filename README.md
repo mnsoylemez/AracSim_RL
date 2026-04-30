@@ -21,26 +21,8 @@ PyTorch 2.0+ (CUDA optional)
 pygame 2.6+
 numpy
 pip install torch pygame numpy
-2. Install the codebase
-The training and environment code is in a separate repository (aracsim_rl_v2). Place this folder alongside the codebase, or copy the checkpoints into the codebase's checkpoints/ directory.
 
-aracsim_rl_v2/
-├── agents/
-├── config.py
-├── data/
-├── egitim/
-├── env/
-├── physics/
-├── render/
-├── road/
-├── sim/
-├── checkpoints/        ← put .pt files here
-│   ├── arac_latest.pt
-│   ├── tc_latest.pt
-│   └── arac_bc_anchor.pt
-├── play.py
-└── README.md
-3. Run the demo
+2. Run the demo
 python play.py
 A pygame window opens. The trained PPO agent drives the vehicle while the trained SAC adversary selects new road parameters at the start of each episode.
 
